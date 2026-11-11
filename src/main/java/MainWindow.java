@@ -1,5 +1,7 @@
-import java.awt.Font;
+import teacher.CreateAssignmentPanel;
 
+
+import java.awt.Font;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
@@ -23,7 +25,7 @@ public class MainWindow {
     );
 
     heading.setFont(heading.getFont().deriveFont(Font.BOLD, 22f));
-    window.add(heading);
+    window.setContentPane(new CreateAssignmentPanel());
     window.setSize(640, 400);
     window.setLocationRelativeTo(null);
     window.setVisible(true);
